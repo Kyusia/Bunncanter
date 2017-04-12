@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bunncanter</string>
+    <string name="bar_restart">restart</string>
+    <string name="bar_undo">undo</string>
+    <string name="bar_stop">stop</string>
+    <string name="guests_name">guests</string>
+    <string name="home_name">home</string>
+    <string name="points_3">+3</string>
+    <string name="points_1">+1</string>
+    <string name="points_2">+2</string>
+    <string name="points_0">0</string>
+    <string name="points_break">:</string>
+    <string name="blanc" />
+</resources>

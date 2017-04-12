@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/barIconsColor</item>
+        <item name="colorPrimaryDark">@color/barIconsColorDarker</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="barText">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">@dimen/paddings</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/barDimension</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="button_2">
+        <item name="android:layout_width">@dimen/button_2_wide</item>
+        <item name="android:layout_height">@dimen/button_2_high</item>
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+    <style name="other_buttons">
+        <item name="android:layout_width">@dimen/buttons_dimensions</item>
+        <item name="android:layout_height">@dimen/buttons_dimensions</item>
+        <item name="android:backgroundTint">@color/buttonColor</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+    </style>
+    <style name="table_team">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/mediumText</item>
+        <item name="android:textColor">@color/plainText</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="score_result">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/plainText</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/largeText</item>
+    </style>
+    <style name="layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">@color/plainText</item>
+        <item name="android:textSize">@dimen/largeText</item>
+    </style>
+    <style name="statement">
+        <item name="android:fontFamily">casual</item>
+       <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/barIconsColor</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:layout_margin">@dimen/margins</item>
+    </style>
+    <style name="with_weight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/high</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

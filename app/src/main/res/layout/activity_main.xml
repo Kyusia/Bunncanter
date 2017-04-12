@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tlo2"
+    tools:context="com.example.kyu.bunncanter.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        style="@style/with_weight"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbarSize="@dimen/s"
+            android:weightSum="10">
+
+            <LinearLayout
+                style="@style/with_weight"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/table_team"
+                    android:text="@string/home_name" />
+
+                <TextView
+                    style="@style/table_team"
+                    android:text="@string/guests_name" />
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/with_weight"
+                android:layout_gravity="center"
+                android:layout_weight="1.7">
+
+                <TextView
+                    style="@style/layout"
+                    android:text="@string/points_break" />
+
+                <LinearLayout style="@style/layout">
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        style="@style/score_result"
+                        android:text="@string/points_0" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        style="@style/score_result"
+                        android:text="@string/points_0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/with_weight"
+                android:layout_weight="2"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    style="@style/layout"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <Button
+                        android:id="@+id/Button2a"
+                        style="@style/button_2"
+                        android:onClick="apatwo"
+                        android:text="@string/points_2" />
+
+                    <LinearLayout
+                        style="@style/layout"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/Button1a"
+                            style="@style/other_buttons"
+                            android:onClick="apaone"
+                            android:text="@string/points_1" />
+
+                        <Button
+                            android:id="@+id/Button3a"
+                            style="@style/other_buttons"
+                            android:onClick="apathree"
+                            android:text="@string/points_3" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layout"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/Button2b"
+                        style="@style/button_2"
+                        android:onClick="apbtwo"
+                        android:text="@string/points_2" />
+
+                    <LinearLayout
+                        style="@style/layout"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/Button1b"
+                            style="@style/other_buttons"
+                            android:onClick="apbone"
+                            android:text="@string/points_1" />
+
+                        <Button
+                            android:id="@+id/Button3b"
+                            style="@style/other_buttons"
+                            android:onClick="apbthree"
+                            android:text="@string/points_3" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                style="@style/with_weight"
+                android:layout_margin="@dimen/margins"
+                android:layout_weight="4">
+
+                <LinearLayout
+                    style="@style/layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/scrool"
+                        style="@style/statement"
+                        android:layout_gravity="start"
+                        android:text="@string/blanc" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <TableRow
+                style="@style/with_weight"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.3"
+                android:background="#80FFFFFF"
+                android:weightSum="3">
+
+                <TextView
+                    style="@style/barText"
+                    android:drawableTop="@drawable/ic_undo"
+                    android:onClick="undo"
+                    android:text="@string/bar_undo" />
+
+                <TextView
+                    style="@style/barText"
+                    android:drawableTop="@drawable/ic_start"
+                    android:onClick="start"
+                    android:text="@string/bar_restart" />
+
+                <TextView
+                    style="@style/barText"
+                    android:drawableTop="@drawable/ic_stop"
+                    android:onClick="stop"
+                    android:text="@string/bar_stop" />
+            </TableRow>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

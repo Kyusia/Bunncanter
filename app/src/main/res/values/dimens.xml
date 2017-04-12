@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="s">12dp</dimen>
+    <dimen name="text">18sp</dimen>
+    <dimen name="mediumText">40sp</dimen>
+    <dimen name="largeText">70sp</dimen>
+    <dimen name="barDimension">60dp</dimen>
+    <dimen name="button_2_high">70dp</dimen>
+    <dimen name="button_2_wide">90dp</dimen>
+    <dimen name="buttons_dimensions">45dp</dimen>
+    <dimen name="margins">12dp</dimen>
+    <dimen name="paddings">6dp</dimen>
+    <dimen name="high">0dp</dimen>
+</resources>
